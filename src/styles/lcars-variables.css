@@ -1,0 +1,16 @@
+:root {
+  --lcars-orange: #ff9900;
+  --lcars-gold: #cc6600;
+  --lcars-lavender: #cc99cc;
+  --lcars-blue: #9999ff;
+  --lcars-red: #cc6666;
+  --lcars-green: #99cc99;
+  --lcars-bg: #000000;
+  --lcars-text: #ff9900;
+
+  --lcars-radius: 30px;
+  --lcars-spacing: 8px;
+  --lcars-bar-height: 40px;
+  --lcars-sidebar-width: 180px;
+  --lcars-header-height: 80px;
+}

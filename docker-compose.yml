@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  life-dashboard:
+    build: .
+    container_name: life-dashboard
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - WEBHOOK_SECRET=${WEBHOOK_SECRET:-changeme}
+    volumes:
+      - dashboard-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  dashboard-data:

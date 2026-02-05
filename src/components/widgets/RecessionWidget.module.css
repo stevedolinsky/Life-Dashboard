@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--lcars-spacing);
+  height: 100%;
+  justify-content: flex-start;
+}
+
+.probabilitySection {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: var(--lcars-spacing);
+  padding: var(--lcars-spacing) 0;
+  border-bottom: 2px solid currentColor;
+}
+
+.probability {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.scenarioSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(var(--lcars-spacing) / 2) 0;
+  margin-bottom: var(--lcars-spacing);
+  border-bottom: 1px solid rgba(255, 153, 0, 0.3);
+}
+
+.indicatorsSection {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--lcars-spacing) / 2);
+}
+
+.indicatorRow {
+  display: flex;
+  align-items: center;
+  padding: calc(var(--lcars-spacing) / 2) 0;
+  border-bottom: 1px solid rgba(255, 153, 0, 0.2);
+}
+
+.indicatorRow:last-child {
+  border-bottom: none;
+}

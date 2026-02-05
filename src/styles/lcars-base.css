@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&display=swap');
+@import './lcars-variables.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--lcars-bg);
+  font-family: 'Antonio', sans-serif;
+  color: var(--lcars-text);
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.lcars-text {
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* Scrollbar styling for LCARS aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--lcars-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--lcars-gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--lcars-orange);
+}
