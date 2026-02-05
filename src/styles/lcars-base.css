@@ -16,12 +16,14 @@ body {
 }
 
 body {
+  display: block;
   background-color: var(--lcars-bg);
   font-family: 'Antonio', sans-serif;
   color: var(--lcars-text);
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 #root {

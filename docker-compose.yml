@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   life-dashboard:
     build: .
@@ -9,10 +7,17 @@ services:
     environment:
       - NODE_ENV=production
       - PORT=3001
-      - WEBHOOK_SECRET=${WEBHOOK_SECRET:-changeme}
+      - WEBHOOK_SECRET=v0PZK8sQYHsOuEejzNYCiWHaCVertBn3
     volumes:
       - dashboard-data:/app/data
+    networks:
+      - default
+      - vps_n8n-network
     restart: unless-stopped
 
 volumes:
   dashboard-data:
+
+networks:
+  vps_n8n-network:
+    external: true
