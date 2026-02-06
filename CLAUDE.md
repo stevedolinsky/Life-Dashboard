@@ -1,2 +1,3 @@
 # Project Context
-Read ~/.claude/CLAUDE.md for global context and project-specific docs.
+STOP. Before doing anything, read ~/.claude/CLAUDE.md for global rules, then read the matching
+project doc from ~/dotfiles/docs/projects/ for this project's architecture, deployment, and gotchas.
