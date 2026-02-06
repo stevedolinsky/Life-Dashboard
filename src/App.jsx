@@ -74,7 +74,7 @@ function WidgetContainer({ widgetType }) {
   }
 
   const WidgetComponent = registry.component;
-  return <WidgetComponent data={data || {}} />;
+  return <WidgetComponent data={data || {}} lastUpdated={data?.lastUpdated} />;
 }
 
 function App() {
