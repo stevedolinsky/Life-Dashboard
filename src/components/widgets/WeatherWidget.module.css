@@ -9,10 +9,16 @@
 .temperatureSection {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: var(--lcars-spacing);
   padding: var(--lcars-spacing) 0;
   border-bottom: 2px solid var(--lcars-blue);
+}
+
+.tempMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .temperature {
@@ -25,6 +31,11 @@
   color: var(--lcars-blue);
 }
 
+.feelsLike {
+  margin-top: calc(var(--lcars-spacing) / 2);
+  opacity: 0.8;
+}
+
 .infoRow {
   display: flex;
   align-items: center;
@@ -34,4 +45,29 @@
 
 .infoRow:last-child {
   border-bottom: none;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--lcars-spacing);
+  padding: var(--lcars-spacing) 0;
+  border-bottom: 1px solid rgba(153, 153, 255, 0.2);
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sunTimes {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--lcars-spacing) 0;
+}
+
+.sunItem {
+  display: flex;
+  align-items: center;
 }
